@@ -13,7 +13,6 @@
             align-items: center;
             justify-content: center;
             height: 90vh;
-            /* fill-opacity: 10%; */
         }
 
         input[type="text"] {
@@ -25,31 +24,51 @@
             text-align: center;
         }
 
-        button {
+        .button-group {
             margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
             padding: 6px 12px;
             font-size: 14px;
             border: none;
-            background-color: #28a745;
             color: white;
             border-radius: 4px;
             cursor: pointer;
         }
 
-        button:hover {
+        #saveButton {
+            background-color: #28a745;
+        }
+
+        #saveButton:hover {
             background-color: #218838;
+        }
+
+        #resetButton {
+            background-color: #dc3545;
+        }
+
+        #resetButton:hover {
+            background-color: #c82333;
         }
     </style>
 
     <script src="https://play.workadventu.re/iframe_api.js"></script>
     
-  <script type="module" crossorigin src="../../assets/numberField-21f176ad.js"></script>
+  <script type="module" crossorigin src="../../assets/numberField-c64de633.js"></script>
 </head>
 
 <body>
 
     <input id="tinyNote" type="text" maxlength="20" placeholder="کد را وارد کن">
-    <button id="saveButton">ذخیره</button>
+
+    <div class="button-group">
+        <button id="saveButton">ذخیره</button>
+        <!-- <button id="resetButton">پاک‌ کردن</button> -->
+    </div>
 
 </body>
 
